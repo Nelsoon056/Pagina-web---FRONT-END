@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Hotline Miami</title>
+</head>
+<body>
+    <header>
+        <h1>HOTLINE MIAMI</h1>
+    </header>
+    <main>
+        <section id="introduccion">
+            <p>Bienvenido a una versión alternativa y sangrienta de Miami en 1989. <strong>Hotline Miami</strong> es un frenético juego de acción con perspectiva cenital (top-down) que te sumerge en una espiral de violencia cruda, luces de neón vibrantes y una banda sonora inolvidable que bombeará adrenalina por tus venas.</p>
+
+            <p>En este juego asumes el papel de un antihéroe silencioso, quien desata masacres en contra del enemigo principal del juego <strong>La Mafia Rusa</strong>. Tu rutina dentro del juego es simple pero adictiva; recibes mensajes crípticos en tu contestador automático que te ordenan dirigirte a distintos puntos de la ciudad para eliminar a todos los miembros de la mafia rusa que encuentres a tu paso, durante tus misiones serás capaz de utilizar dsitintos tipos de armas para realizar tu trabajo, bien sean armas cuerpo a cuerpo o armas de fuego. Cada una tiene su estrategia y dependiendo de la situación te favorecerán más algunas o otras. Además de esto, debes enfrentar a un repertorio de enemigos bastante amplio para abrirte paso dentro de los niveles y asi lograr completar la historia.</p>
+
+            <h3>Características Principales del Juego</h3>
+            <ul>
+                <li><strong>Jugabilidad:</strong> Un solo golpe o disparo es letal, tanto para tus enemigos como para ti. Gracias a eso se convierte en un juego de ensayo y error constante, pero a la vez bastante frenetico donde los reflejos y tu habilidad a la hora de jugar se vuelven pilares fundamentales.</li>
+                <li><strong>Las Máscaras:</strong> Antes de iniciar cada misión, deberás equiparte con una máscara de animal. Cada una te otorga habilidades o modificaroes únicos, desde caminar más rápido hasta sobrevivir a un disparo letal o empezar con armas especiales. Gracias a esto el juego se vuelve bastante personalizable para cada forma de jugar del jugador</li>
+                <li><strong>Banda Sonora:</strong> El juego cuenta con una selección de música electrónica y Synthwave (con artistas como M.O.O.N, Perturbator, Scattle, Jasper Byrne, entre otros más) que vuelven la experiencia de jugar más inmersiva y a la vez adictiva, siendo temas que se mezclan muy bien con la temática ochentera del juego.</li>
+            </ul>
+
+            <h3>Plataformas Disponibles</h3>
+            <p>Hotline Miami está disponible para las siguientes plataformas:</p>
+            <ul>
+                <li><strong>PC:</strong> Windows, macOS, Linux (Vía Steam y GOG)</li>
+                <li><strong>Consolas:</strong> PlayStation 3, PlayStation 4, PlayStation Vita, Xbox One, Nintendo Switch</li>
+                <li><strong>Dispositivos Móviles:</strong> Android</li>
+            </ul>
+        </section>
+
+        
+        <section id="trailer">
+            <h3>Tráiler Oficial</h3>
+            <iframe src="https://www.youtube.com/embed/_5AJtaYx1Eg" frameborder="0"></iframe>
+        </section>
+
+        <section id="ruleta">
+            <h3>Máscaras</h3>
+            <button id="subir" onclick="girarRuleta(-1)">
+                <img src="assets/icons/Arrow-left.png" alt="" width="100px", height="100px">
+            </button>
+            <div id="mascara">
+                <img src="assets/images/RICHARD.webp" alt="" id="mascara_display" width="300px", height="350px">
+                <h3 id="mascara_nombre">Richard (Gallo)</h3>
+            </div>
+            <button id="bajar" onclick="girarRuleta(1)">
+                <img src="assets/icons/Arrow-right.png" width="100px", height="100px">
+            </button>
+        </section>
+        <section id="informacion_mascara">
+            <p id="mascara_descripcion">Sin efecto adicional. La máscara por defecto y un símbolo del juego.</p>
+        </section>
+        <section id="reproductor">
+
+        </section>
+    </main>
+    <footer>
+        <script src="js/main.js"></script>
+    </footer>
+</body>
+</html>
