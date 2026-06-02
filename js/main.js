@@ -1,6 +1,6 @@
 const mascaras = [
     ["Richard (Gallo)", "../assets/images/RICHARD.webp", "Sin efecto adicional. La máscara por defecto y un símbolo del juego."],
-    ["Rasmus (Búho)", "../assets/images/Rasmus.webp", "Un ojo para los secretos. Hace que los objetos coleccionables e interactivos brillen en el mapa."],
+    ["Rasmus (Buho)", "../assets/images/Rasmus.webp", "Un ojo para los secretos. Hace que los objetos coleccionables e interactivos brillen en el mapa."],
     ["Tony (Tigre)", "../assets/images/Tony.webp", "Puños de furia. Los golpes cuerpo a cuerpo son letales y las ejecuciones son mucho más rápidas."],
     ["Aubrey (Cerdo)", "../assets/images/Aubrey.webp", "Más armas. Aumenta significativamente la cantidad de armas de fuego que dejan caer los enemigos al morir."],
     ["Don Juan (Caballo)", "assets/images/Don_Juan.webp", "Puertas letales. Al golpear a los enemigos abriendo puertas, mueren al instante en lugar de solo quedar aturdidos."],
@@ -15,7 +15,19 @@ const mascaras = [
     ["Richter (Rata)", "assets/images/Richter.webp", "Empiezas con una Uzi con silenciador. Fuego rápido y sigiloso desde el inicio del nivel."],
     ["Carl (Saltamontes)", "assets/images/Carl.webp", "Empiezas con un taladro. Te otorga un arma cuerpo a cuerpo única y ejecuciones muy sangrientas (y ruidosas)."],
     ["Jake (Cobra)", "assets/images/Jake.webp", "Lanzamientos letales. Cualquier arma u objeto que arrojes matará a los enemigos al instante en lugar de aturdirlos."],
-    ["Louie (Camaleón)", "assets/images/Louie.webp", "Difícil de detectar. Los enemigos tardan más tiempo en notarte, dándote unos valiosos segundos extra para actuar."]
+    ["Louie (Camaleon)", "assets/images/Louie.webp", "Difícil de detectar. Los enemigos tardan más tiempo en notarte, dándote unos valiosos segundos extra para actuar."]
+];
+
+const canciones = [
+    ["Crystals", "../assets/audio/Crystals.ogg"],
+    ["Hotline", "../assets/audio/Hotline.ogg"],
+    ["Hydrogen", "../assets/audio/Hydrogen.ogg"],
+    ["InnerAnimal", "../assets/audio/InnerAnimal.ogg"],
+    ["Knock Knock", "../assets/audio/Knock.ogg"],
+    ["Musikk Per Automatikk", "../assets/audio/Musikk2.ogg"],
+    ["Paris", "../assets/audio/Paris2.ogg"],
+    ["To The Top", "../assets/audio/ToTheTop.ogg"],
+    ["Turf", "../assets/audio/TurfMain.ogg"]
 ];
 
 const mascara = document.getElementById("mascara_display");
@@ -35,3 +47,43 @@ function girarRuleta(num) {
     nombre_mascara.innerText = mascaras[indice][0];
     descripcion_mascara.innerText = mascaras[indice][2];
 }
+
+let indiceCancion = 0;
+
+const musica = document.getElementById("musica");
+const disco = document.getElementById("disco");
+const tituloCancion = document.getElementById("nombre_cancion");
+const iconoPlay = document.getElementById("play");
+
+function alternarPLayPausa () {
+    if (musica.paused) {
+        musica.play()
+    } else {
+        musica.pause()
+    }
+}
+
+function cambiarCancion (dir) {
+    indiceCancion += dir;
+    if (indiceCancion >= canciones.length) {
+        indiceCancion = 0;
+    } else if (indiceCancion < 0) {
+        indiceCancion = canciones.length -1
+    }
+
+    tituloCancion.innerText = canciones[indiceCancion][0];
+    musica.src = canciones[indiceCancion][1];
+    musica.play()
+}
+
+musica.addEventListener("play", function() {
+    disco.classList.add("disco-girando");
+    iconoPlay.src = "assets/icons/Pause_button.png"; 
+    iconoPlay.alt = "Pausa";
+});
+
+musica.addEventListener("pause", function() {
+    disco.classList.remove("disco-girando");
+    iconoPlay.src = "assets/icons/Play_button.png"; 
+    iconoPlay.alt = "Play";
+});

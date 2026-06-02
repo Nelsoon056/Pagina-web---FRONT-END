@@ -6,6 +6,245 @@
 
 }
 
-/* h1 {
+h1{
     font-family: 'hotline-white', arial, sans-serif;
-} */
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'hotline-white', arial, sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'hotline-white', arial, sans-serif;
+    font-size: 20px;
+}
+
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.disco-girando {
+    animation: girar 3s linear infinite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#0c0614, #000);/* #0c0614 */ 
+    color: #e2dbec; 
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+strong {
+    color: #ffff00; 
+}
+
+header {
+    background-color: #160b24;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 4px solid #ff007f; 
+    box-shadow: 0 4px 20px rgba(255, 0, 127, 0.4);
+}
+
+header a {
+    color: #00ffff; 
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #00ffff;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    background-color: #00ffff;
+    color: #0c0614;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #130a1e;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border: 1px solid #3d1a5a;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+
+ul {
+    list-style: none; 
+    margin: 20px 0;
+}
+
+ul li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+}
+
+
+ul li::before {
+    content: "»";
+    position: absolute;
+    left: 0;
+    color: #ff007f;
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+#trailer {
+    text-align: center;
+}
+
+#trailer iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    margin-top: 15px;
+}
+
+#ruleta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px;
+}
+
+
+#subir, #bajar, .controles {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#subir:hover, #bajar:hover, .controles:hover {
+    transform: scale(1.15);
+}
+
+#subir img, #bajar img {
+    image-rendering: pixelated; 
+    filter: drop-shadow(0 0 5px #ff007f);
+}
+
+#mascara {
+    text-align: center;
+    flex: 1;
+    width: 300px;
+    height: 450px;
+}
+
+#mascara_display {
+    image-rendering: pixelated;
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+}
+
+#informacion_mascara {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    background-color: #1c0f2b;
+    padding: 15px;
+    border-left: 4px solid #ffff00; 
+}
+
+#reproductor {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#contenedo_disco {
+    margin-bottom: 20px;
+}
+
+#disco {
+    image-rendering: pixelated;
+    border-radius: 50%; 
+    max-width: 250px;    
+    height: auto;
+}
+
+.disco-girando {
+    animation: girarDisco 4s linear infinite;
+}
+
+@keyframes girarDisco {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+#nombre_cancion {
+    color: #ffff00;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+
+.constroles_audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.display_controles {
+    width: 50px;   
+    height: 50px;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 5px #00ffff);
+}
+
+#play {
+    width: 65px;   
+    height: 65px;
+    filter: drop-shadow(0 0 8px #ff007f);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #ff007f;
+    color: #64748b;
+    font-family: 'Arial', sans-serif;
+}

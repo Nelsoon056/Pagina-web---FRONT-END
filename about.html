@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles2.css">
+    <title>Detrás de Escenas</title>
+</head>
+<body>
+    <header>
+        <h1>EXPLICACIÓN DE LA SEMÁNTICA</h1>
+        <a href="index.html">Volver al Proyecto Principal</a>
+    </header>
+    
+    <main>
+        <section id="introduccion_tecnica">
+            <h2>Explicación</h2>
+            <p>Este documento funciona como el registro técnico del proyecto "Hotline Miami Web". A continuación, se detalla la estructura semántica utilizada en la construcción de la interfaz principal, justificando el uso de cada etiqueta HTML5 para garantizar accesibilidad, correcta indexación y organización del código, junto con una breve explicación del proceso de creación de la página.</p>
+        </section>
+
+        <article class="etiqueta_explicacion">
+            <h3>Estructura Principal</h3>
+            <ul>
+                <li><strong>&lt;header&gt;:</strong> Se utiliza en la parte superior para contener el título principal de la página (h1) y la barra con el enlace a esta parte de la página. Sirve para Definir la cabecera del documento.</li>
+                <li><strong>&lt;main&gt;:</strong> Envuelve todo el contenido central y único del proyecto. Ayudando así a los motores de búsqueda a identificar cuál es la información más importante de la página, en este caso al estar basada en una página promocional de un juego contiene cosas como de qué trata, donde jugarlo, personajes (en este caso las máscaras) y un apatartado con su banda sonora.</li>
+                <li><strong>&lt;section&gt;:</strong> Se emplea para agrupar bloques de contenido temático y hacer el código mas legible y más sencillo de entender. En mí proyecto, separa la introducción, el tráiler, la ruleta de máscaras y el reproductor de música.</li>
+                <li><strong>&lt;footer&gt;:</strong> Situada al final del documento, contiene los scripts de JavaScript (<code>main.js</code>) y los créditos de desarrollo.</li>
+            </ul>
+        </article>
+
+        <article class="etiqueta_explicacion">
+            <h3>Multimedia e Interactividad</h3>
+            <ul>
+                <li><strong>&lt;iframe&gt;:</strong> Es fundamental para mostrar el tráiler oficial del juego desde YouTube sin necesidad de alojar el video pesado en el servidor local.</li>
+                <li><strong>&lt;audio&gt; y &lt;source&gt;:</strong> Etiquetas multimedia utilizadas para crear el reproductor de la banda sonora. Me permitió vincular archivos locales (.ogg) y sus controlarlos mediante JavaScript.</li>
+                <li><strong>&lt;button&gt;:</strong> El elemento semantico e interactivo. Se usó en conjunto con el evento <code>onclick</code> para disparar las funciones de JavaScript que hacen girar la ruleta y controlan la musica.</li>
+                <li><strong>&lt;img&gt;:</strong> Utilizada para insertar los iconos de control y las imágenes pixel art (máscaras, disco de vinilo y controles), empleando el atributo <code>alt</code> para accesibilidad.</li>
+                <li><strong>&lt;li&gt; y &lt;ul&gt;</strong> Me ayudaron a crear pequeñas secciones donde quiero mostrar una lista de algunos atributos a hablar del juego como sus Caracteristicas o las plataformas donde se puede jugar</li>
+            </ul>
+        </article>
+        <article class="etiqueta_explicacion">
+            <h3>Proceso de Creación</h3>
+            <p>Crear este pequeño proyecto para mostras mis habilidades con la estructura semántica de una pagina web fue un reto bastante divertido, primero elegí una temática para la página, en este caso me decante por uno de mis juegos favoritos <strong>Hotline Miami</strong> que tiene una vibra bastante genial para colocar en una página web, y pensé en realizarlo como una página promocional del juego, y asi mostrar los diferentes usos de las etiquetas aprendidas en clase cuyas funciones ya explique en el segmento de arriba, algunos sprites como los de los botones los hice a mano en la página pixilArt para que combinaran con la estetica del juego y el resultado final del proyecto resultó bastante agradaable para mí y siento que es un buen ejemplo de como se podría elaborar una página web usando una buena semántica.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Desarrollado por: <strong>Nelsoon Sandoval</strong> | C.I: 32.268.736</p>
+    </footer>
+</body>
+</html>
