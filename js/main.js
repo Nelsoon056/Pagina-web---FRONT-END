@@ -1,8 +1,8 @@
 const mascaras = [
-    ["Richard (Gallo)", "../assets/images/RICHARD.webp", "Sin efecto adicional. La máscara por defecto y un símbolo del juego."],
-    ["Rasmus (Buho)", "../assets/images/Rasmus.webp", "Un ojo para los secretos. Hace que los objetos coleccionables e interactivos brillen en el mapa."],
-    ["Tony (Tigre)", "../assets/images/Tony.webp", "Puños de furia. Los golpes cuerpo a cuerpo son letales y las ejecuciones son mucho más rápidas."],
-    ["Aubrey (Cerdo)", "../assets/images/Aubrey.webp", "Más armas. Aumenta significativamente la cantidad de armas de fuego que dejan caer los enemigos al morir."],
+    ["Richard (Gallo)", "assets/images/RICHARD.webp", "Sin efecto adicional. La máscara por defecto y un símbolo del juego."],
+    ["Rasmus (Buho)", "assets/images/Rasmus.webp", "Un ojo para los secretos. Hace que los objetos coleccionables e interactivos brillen en el mapa."],
+    ["Tony (Tigre)", "assets/images/Tony.webp", "Puños de furia. Los golpes cuerpo a cuerpo son letales y las ejecuciones son mucho más rápidas."],
+    ["Aubrey (Cerdo)", "assets/images/Aubrey.webp", "Más armas. Aumenta significativamente la cantidad de armas de fuego que dejan caer los enemigos al morir."],
     ["Don Juan (Caballo)", "assets/images/Don_Juan.webp", "Puertas letales. Al golpear a los enemigos abriendo puertas, mueren al instante en lugar de solo quedar aturdidos."],
     ["Graham (Conejo)", "assets/images/Graham.webp", "Caminar rápido. Aumenta la velocidad de movimiento, ideal para esquivar disparos y hacer combos rápidos."],
     ["Dennis (Lobo)", "assets/images/Dennis.webp", "Empiezas con un cuchillo. Ideal para partidas sigilosas y ataques cuerpo a cuerpo desde el primer segundo."],
@@ -19,15 +19,15 @@ const mascaras = [
 ];
 
 const canciones = [
-    ["Crystals", "../assets/audio/Crystals.ogg"],
-    ["Hotline", "../assets/audio/Hotline.ogg"],
-    ["Hydrogen", "../assets/audio/Hydrogen.ogg"],
-    ["InnerAnimal", "../assets/audio/InnerAnimal.ogg"],
-    ["Knock Knock", "../assets/audio/Knock.ogg"],
-    ["Musikk Per Automatikk", "../assets/audio/Musikk2.ogg"],
-    ["Paris", "../assets/audio/Paris2.ogg"],
-    ["To The Top", "../assets/audio/ToTheTop.ogg"],
-    ["Turf", "../assets/audio/TurfMain.ogg"]
+    ["Crystals", "assets/audio/Crystals.ogg"],
+    ["Hotline", "assets/audio/Hotline.ogg"],
+    ["Hydrogen", "assets/audio/Hydrogen.ogg"],
+    ["InnerAnimal", "assets/audio/InnerAnimal.ogg"],
+    ["Knock Knock", "assets/audio/Knock.ogg"],
+    ["Musikk Per Automatikk", "assets/audio/Musikk2.ogg"],
+    ["Paris", "assets/audio/Paris2.ogg"],
+    ["To The Top", "assets/audio/ToTheTop.ogg"],
+    ["Turf", "assets/audio/TurfMain.ogg"]
 ];
 
 const mascara = document.getElementById("mascara_display");
